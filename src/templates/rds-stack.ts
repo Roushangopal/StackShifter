@@ -1,4 +1,4 @@
-import { Stack, StackProps } from 'aws-cdk-lib';
+import { Stack, StackProps, RemovalPolicy } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as rds from 'aws-cdk-lib/aws-rds';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
@@ -25,7 +25,7 @@ export class RdsStack extends Stack {
       instanceType: props.instanceType,
       allocatedStorage: props.allocatedStorage ?? 20,
       databaseName: props.databaseName,
-      removalPolicy: rds.RemovalPolicy.DESTROY, // Change to RETAIN for production
+      removalPolicy: RemovalPolicy.DESTROY, // Change to RETAIN for production
       deletionProtection: false,
       publiclyAccessible: false,
     });
