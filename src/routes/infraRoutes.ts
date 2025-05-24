@@ -4,6 +4,6 @@ import { generateInfra } from '../controllers/infraController';
 
 const router = express.Router();
 
-router.post('/generate', generateInfra); // ✅ Correct
+router.post('/generate', generateInfra); 
 
 export default router;
