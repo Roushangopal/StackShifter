@@ -3,7 +3,7 @@ import { z } from 'zod';
 export const generateInfraSchema = z.object({
   cloud: z.literal("aws"), // you can add support for gcp/azure later
   language: z.enum(["typescript", "python"]),
-  services: z.array(z.enum(["lambda", "dynamodb", "apigateway", "s3"])),
+  services: z.array(z.enum(["lambda", "dynamodb", "apigateway", "s3", "ec2", "rds"])), // Add more services as needed
   projectName: z.string().min(1),
   region: z.string()
 });
