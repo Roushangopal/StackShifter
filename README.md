@@ -67,7 +67,7 @@ services/
 ## 📌 Roadmap
 
 - [x] Core infra generation service
-- [x] Lambda, S3, API Gateway, DynamoDB templates
+- [x] Lambda, S3, API Gateway, DynamoDB, ec2, rds, evenbridge templates
 - [ ] React-based drag-and-drop UI
 - [ ] Terraform support
 - [ ] User authentication & dashboard
